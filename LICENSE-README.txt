@@ -1,10 +1,11 @@
-# Licencje projektu Ardu2812
+Licencje / Licenses – ArduFM2612
 
-- Software (kod źródłowy): **MIT**
-  - plik: `LICENSE-SOFTWARE-MIT.txt`
+- Oprogramowanie / Software: MIT (LICENSE-SOFTWARE-MIT.txt)
+- Sprzęt (schemat, PCB, Gerbery) / Hardware (schematic, PCB, Gerbers):
+  CERN-OHL-P-2.0 (LICENSE-HARDWARE-CERN-OHL-P-2.0.txt)
 
-- Hardware (schematy, PCB, Gerbery i dokumentacja sprzętowa): **CERN-OHL-P-2.0**
-  - plik: `LICENSE-HARDWARE-CERN-OHL-P-2.0.txt`
+PL: Obie licencje są permisywne – możesz używać projektu do czego chcesz,
+także komercyjnie, pod warunkiem zachowania informacji o licencji.
 
-To jest zestaw licencji permisywnych — projekt może być wykorzystywany dowolnie,
-w tym komercyjnie, pod warunkiem zachowania informacji licencyjnych.
+EN: Both licenses are permissive – use the project for anything you like,
+commercial use included, as long as you keep the license notices.

@@ -1,33 +1,21 @@
 # Firmware
 
-PL 🇵🇱 | EN 🇬🇧
+**PL:** Firmware dla ATmega328P (Arduino Uno/Nano). Odbiera MIDI i zapisuje rejestry YM2612.
 
-## PL
-Katalog firmware projektu Ardu2812:
-- kod źródłowy
-- konfiguracje toolchaina/IDE
-- ewentualne binarki/hex
+- `ARDU2612.ino` – obsługa MIDI i mapa CC
+- `YM2612.h/.cpp` – sterownik układu i przydział głosów
+- `instr.h` – 48 brzmień (VGI), `VGI.h` – format brzmienia
 
-Build:
-1. Otwórz projekt w używanym IDE/toolchainie
-2. Ustaw target mikrokontrolera
-3. Skompiluj i wgraj firmware
+Kompilacja: Arduino IDE + biblioteka MIDI Library (FortySevenEffects), płytka z ATmega328P 16 MHz. Jest też projekt Visual Studio + Visual Micro.
 
-Debug:
-- brak dźwięku → sprawdź init YM2812 i zegar
-- niestabilność → sprawdź zasilanie i masy
+Brak dźwięku? Sprawdź zegar YM na pinie D9 (8 MHz), potem linie D0–D7, CS, WR, A0, A1 i IC.
 
-## EN
-Firmware directory for Ardu2812:
-- source code
-- toolchain/IDE configuration
-- optional binaries/hex files
+**EN:** Firmware for the ATmega328P (Arduino Uno/Nano). It reads MIDI and writes YM2612 registers.
 
-Build:
-1. Open the project in your IDE/toolchain
-2. Set the correct MCU target
-3. Build and flash firmware
+- `ARDU2612.ino` – MIDI handling and the CC map
+- `YM2612.h/.cpp` – chip driver and voice allocation
+- `instr.h` – 48 patches (VGI), `VGI.h` – patch format
 
-Debug:
-- no sound → check YM2812 init and clock
-- instability → check power rails and grounding
+Build: Arduino IDE + MIDI Library (FortySevenEffects), an ATmega328P board at 16 MHz. A Visual Studio + Visual Micro project is included too.
+
+No sound? Check the YM clock on pin D9 (8 MHz) first, then D0–D7, CS, WR, A0, A1 and IC.
